@@ -24,25 +24,17 @@ function App() {
     }, 1500);
   };
 
-  const toggleMode = (mode) => {
-    if (mode === 'dark') {
-      setMode('dark');
-      document.body.style.backgroundColor = '#042743';
-      showAlert("Dark mode has been enabled", 'success');
-      document.title = 'TextUtils - Dark Mode';
-    } else if (mode === 'red') {
-      setMode('red');
-      document.body.style.backgroundColor = '#FF6347';
-      showAlert("Red mode has been enabled", 'success');
-      document.title = 'TextUtils - Red Mode';
+ 
+  const toggleMode = (newMode) => {
+    setMode(newMode);
+    if (newMode === 'dark') {
+      document.body.style.backgroundColor = '#333';
+      document.body.style.color = 'white';
     } else {
-      setMode('light');
-      document.body.style.backgroundColor = 'white';
-      showAlert("Light mode has been enabled", 'success');
-      document.title = 'TextUtils - Light Mode';
+      document.body.style.backgroundColor = '#fff';
+      document.body.style.color = 'black';
     }
   };
-
   return (
     <>
       

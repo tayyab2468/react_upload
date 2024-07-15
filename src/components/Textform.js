@@ -42,16 +42,16 @@ export default function Textform(props) {
             }}
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-1" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleLoClick}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleClearClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>
           Clear Text
         </button>
-        <div className='container my-2' style={{ color: props.mode === 'dark' ? 'white' : props.mode === 'red' ? 'black' : '#042743' }}>
+        <div className='container my-2 ' style={{ color: props.mode === 'dark' ? 'white' : props.mode === 'red' ? 'black' : '#042743' }}>
           <h1>Your Text Summary</h1>
           <p>{text.split(" ").filter(word => word.length > 0).length} words and {text.length} characters</p>
           <p>{0.008 * text.split(" ").filter(word => word.length > 0).length} Minutes read</p>

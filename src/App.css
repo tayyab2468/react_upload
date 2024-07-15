@@ -49,3 +49,9 @@
 .btn-btn-primary {
   background-color: blue;
 }
+body {
+  transition: background-color 0.5s ease;
+}
+.navbar {
+  transition: background-color 0.5s ease;
+}
